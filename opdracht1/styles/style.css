@@ -2,12 +2,27 @@
 
 /* FONTS */
 @font-face {
+	font-family: 'ftystrategycidencv-elgl-webfont';
+	src: url('../fonts/ftystrategycidencv-elgl-webfont.woff2') format('woff2'),
+			 url('../fonts/ftystrategycidencv-elgl-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'tesla-webfont';
+	src: url('../fonts/tesla-webfont.woff2') format('woff2'),
+			 url('../fonts/tesla-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'eenfont';
 	src: url('../fonts/eenfont.woff2') format('woff2'),
 			 url('../fonts/eenfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-
 }
 
 
@@ -20,8 +35,42 @@ body {
   font-family:eenfont, sans-serif;
   color:#111;
   background-color:#eee;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+h1:first-of-type{
+	grid-column: 1 / -1;
+}
+
+section{
+	height: 30em;
+	width: 100%;
+	background-color: blue;
+	position: relative;
+	overflow: hidden;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section:first-of-type{
+	background-color: red;
 }
 
 
 /* BRAND STYLING */
 
+/* JBL */
+
+section:first-of-type h1{
+	font-family: 'ftystrategycidencv-elgl-webfont', sans-serif;
+}
+
+/* TESLA */
+
+section:nth-of-type(2) h1{
+	font-family: 'tesla-webfont', sans-serif;
+}
