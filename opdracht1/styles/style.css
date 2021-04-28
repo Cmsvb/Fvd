@@ -35,42 +35,104 @@ body {
   font-family:eenfont, sans-serif;
   color:#111;
   background-color:#eee;
-
   display:grid;
   grid-template-columns: 1fr 1fr;
   
 }
 
-h1:first-of-type{
+body > h1{
 	grid-column: 1 / -1;
 }
 
 section{
 	height: 30em;
 	width: 100%;
-	background-color: blue;
 	position: relative;
-	overflow: hidden;
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
-section:first-of-type{
-	background-color: red;
+section:nth-of-type(2){
+	background: rgb(146,150,170);
+	background: radial-gradient(circle, rgba(146,150,170,1) 0%, rgba(233,233,233,1) 100%);
 }
-
 
 /* BRAND STYLING */
 
 /* JBL */
 
-section:first-of-type h1{
+@keyframes jblbass{
+	0%, 15% {
+			transform: scale(1);
+	}
+	31% {
+			transform: scale(1.2);
+	}
+	42% {
+			transform: scale(1.1);
+	}
+	53% {
+			transform: scale(1.3);
+	}
+	64% {
+			transform: scale(1.2);
+	}
+	75% {
+			transform: scale(1.4);
+	}
+	90%, 100% {
+			transform: scale(1);
+	}
+}
+.jbl{
 	font-family: 'ftystrategycidencv-elgl-webfont', sans-serif;
+	letter-spacing: -.07em;
+    color: white;
+	background-color: rgb(245, 58, 24);
+}
+
+.jbl h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(3.2em, 10vw, 4.5em);
+	color:white;
+	/* animation: jblbass 0.5s ease-in-out infinite paused; */
+}
+
+.jbl:hover h1{
+	animation-play-state:running;
+}
+
+
+.jbl h1::before{
+	content:" ";
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	background-color: green;
+	box-shadow: 0 0 1em white;
+	position:absolute;
+	animation: jblbass 2.2s ease-in-out infinite;
+	z-index: 1;
+}
+
+.jbl:hover h1::before{
+	/* animation: jblbass 0.5s ease-in-out infinite both; */
+	/* animation-play-state:running; */
+}
+
+.jbl h1 span{
+	display: block;
+	z-index: 2;
 }
 
 /* TESLA */
 
 section:nth-of-type(2) h1{
 	font-family: 'tesla-webfont', sans-serif;
+	font-size: 4em;
+	
 }
