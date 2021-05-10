@@ -54,43 +54,119 @@ section{
 	overflow: hidden;
 }
 
-section:nth-of-type(2){
-	background: rgb(146,150,170);
-	background: radial-gradient(circle, rgba(146,150,170,1) 0%, rgba(233,233,233,1) 100%);
-}
-
 /* BRAND STYLING */
 
 /* JBL */
 
 @keyframes jblbass{
 	0%, 15% {
-			transform: scale(1);
+			transform: scale(0);
+			box-shadow: 0 0 0em 0em var(--jblcircleshadow);
 	}
-	31% {
-			transform: scale(1.2);
+	22.5% {
+			transform: scale(1.4);
+			box-shadow: 0 0 0em 0.1em var(--jblcircleshadow);
 	}
-	42% {
-			transform: scale(1.1);
-	}
-	53% {
+	30% {
 			transform: scale(1.3);
+			box-shadow: 0 0 0em 0.2em var(--jblcircleshadow);
 	}
-	64% {
-			transform: scale(1.2);
+	37.5% {
+		transform: scale(1.5);
+		box-shadow: 0 0 0em 0.1em var(--jblcircleshadow);
+	}
+	45% {
+			transform: scale(1.3);
+			box-shadow: 0 0 0em 0.3em var(--jblcircleshadow);
+	}
+	52.5% {
+			transform: scale(1.4);
+			box-shadow: 0 0 0em 0.12em var(--jblcircleshadow);
+	}
+	60% {
+			transform: scale(1.3);
+			box-shadow: 0 0 0em 0.3em var(--jblcircleshadow);
+	}
+	67.5% {
+			transform: scale(1.5);
+			box-shadow: 0 0 0em 0.1em var(--jblcircleshadow);
 	}
 	75% {
+			transform: scale(1.3);
+			box-shadow: 0 0 0em 0.08em var(--jblcircleshadow);
+	}
+	82.5% {
 			transform: scale(1.4);
+			box-shadow: 0 0 0em 0.25em var(--jblcircleshadow);
 	}
 	90%, 100% {
-			transform: scale(1);
+			transform: scale(0);
+			box-shadow: 0 0 0em 0em var(--jblcircleshadow);
+	}
+}
+
+@keyframes jbltextpump{
+	0%, 30% {
+		transform:scale(1);
+		letter-spacing: .1em;
+	}
+	34% {
+		transform:scale(1.3);
+		letter-spacing: .1em;
+		
+	}
+	38% {
+		transform:scale(1.1);
+		letter-spacing: .1em;
+	}
+	42% {
+		transform:scale(1.4);
+		letter-spacing: .1em;
+	}
+	46% {
+		transform:scale(1.1);
+		letter-spacing: .1em;
+	}
+	52% {
+		transform:scale(1.3);
+		letter-spacing: .1em;
+	}
+	64% { 
+		transform: skewX(-15deg); 
+	}
+  	65% { 
+		transform: skewX(15deg); 
+	}
+  	66% { 
+		transform: skewX(-15deg); 
+	}
+  	67% { 
+		transform: skewX(15deg); 
+	}
+	68% { 
+		transform: skewX(-15deg); 
+	}
+  	69% { 
+		transform: skewX(15deg); 
+	}
+  	70% { 
+		transform: skewX(0deg); 
+	} 
+	91%, 100% {
+		transform:scale(1);
+		letter-spacing: .1em;
 	}
 }
 .jbl{
+	--jblbackground: rgb(43, 43, 43);
+	--jblcircle:  rgb(245, 58, 24);
+	--jblcircleshadow: rgba(255, 255, 255, 0.863);
+	--jbltext: #ffffff;
 	font-family: 'ftystrategycidencv-elgl-webfont', sans-serif;
 	letter-spacing: -.07em;
-    color: white;
-	background-color: rgb(245, 58, 24);
+    color: var(--jbltext);
+	background-color: var(--jblbackground);
+	
 }
 
 .jbl h1{
@@ -98,12 +174,7 @@ section:nth-of-type(2){
 	justify-content: center;
 	align-items: center;
 	font-size: clamp(3.2em, 10vw, 4.5em);
-	color:white;
-	/* animation: jblbass 0.5s ease-in-out infinite paused; */
-}
-
-.jbl:hover h1{
-	animation-play-state:running;
+	color:var(--jbltext);
 }
 
 
@@ -112,27 +183,168 @@ section:nth-of-type(2){
 	width: 3em;
 	height: 3em;
 	border-radius: 50%;
-	background-color: green;
-	box-shadow: 0 0 1em white;
+	background-color: var(--jblcircle);
+	box-shadow: 0px 0px 0px 0px var(--jblcircleshadow);
 	position:absolute;
-	animation: jblbass 2.2s ease-in-out infinite;
+	animation: jblbass 4s ease-in-out infinite paused;
 	z-index: 1;
 }
 
 .jbl:hover h1::before{
-	/* animation: jblbass 0.5s ease-in-out infinite both; */
-	/* animation-play-state:running; */
+	animation: jblbass jbltextpump 4s ease-in-out infinite both;
+	animation-play-state:running;
 }
 
 .jbl h1 span{
 	display: block;
 	z-index: 2;
+	/* text-shadow:var(--jbltextshadow); */
+	animation: jbltextpump 4.1s ease-in-out infinite paused;	
+}
+.jbl:hover h1 span{
+	animation: jbltextpump 4.1s ease-in-out infinite both;
+	animation-play-state:running;
 }
 
 /* TESLA */
 
-section:nth-of-type(2) h1{
+.tesla{
+	overflow: hidden;
+	--black:#000000;
+	--white: #ffffff;
+	--shadow: rgba(0,0,0,0.2);
+	--gradientwhite: radial-gradient(circle, rgba(146,150,170,1) 0%, rgba(233,233,233,1) 100%);
+	background: rgb(146,150,170);
+	background: var(--gradientwhite);
+}
+
+@keyframes tesla-t{
+	0%{
+		transform:scale(1);
+	}
+	1% {
+		transform:scale(2);
+		transform-origin:center middle;
+		letter-spacing: 0.3em;
+		text-shadow: 0 0 0.3em var(--shadow);	
+	}
+	7% {
+		transform:scale(1);
+		letter-spacing: 0em;
+		text-shadow: 0 0 0em var(--shadow);
+	}
+	10% {
+		transform:scale(1.1);
+		text-shadow: 0 0 0.05em var(--shadow);
+	}
+	12% {
+		transform:scale(1);
+	}
+	14% {
+		transform:scale(1.1);
+		text-shadow: 0 0 0.05em var(--shadow);
+	}
+	17% {
+		transform:scale(1);
+		transform-origin:middle center;
+	}
+	22% {
+		transform:rotate(0);
+		transform-origin:bottom center;
+	}
+	47% {
+		animation-timing-function:ease-in-out;
+		transform:rotate(170deg);
+		transform-origin:bottom center;
+		color:var(--black);
+	}
+	48%{
+		color:var(--white);
+	}
+	60%{
+		transform:skewY(0deg);
+	}
+	70%{
+		transform: translateX(0em);
+	}
+	100% {
+		transform:skewY(8deg);
+		transform:translateX(8em);
+		color:var(--white);
+	}
+}
+@keyframes teslaoverflow {
+	0%,10%{
+		height: 4em; width: 8em;
+	} 
+	25%, 100%{
+		height: 1em; width: 7em;
+	}
+}
+
+@keyframes teslabackground {
+	0%,30%{
+		transform: translate(0em,30em);
+	} 
+	60%{
+		transform: translate(0em,0em);
+	}  
+}
+
+
+.tesla::after{
+	content:" ";
+	width: 100%;
+	height: 100%;
+	background: var(--black);
+	position:absolute;
+	animation: teslabackground 4.5s ease-in-out infinite paused;
+}
+
+.tesla:hover::after{
+	animation-play-state:running;
+}
+
+.tesla h1{
 	font-family: 'tesla-webfont', sans-serif;
 	font-size: 4em;
-	
+	display: flex;
+	color:var(--black);
+	justify-content: center;
+	align-items: center;
+	font-size: clamp(3.2em, 10vw, 4.5em);
+	z-index: 1;
+	overflow:hidden;
+	position: absolute;
+	animation: teslaoverflow 4.5s ease-in-out infinite paused;
+}
+
+.tesla:hover h1{
+	animation-play-state:running;
+}
+
+.tesla h1 span{
+	display: block;
+	animation: tesla-t 4.5s ease-in-out infinite paused;
+}
+
+.tesla:hover h1 span{
+	animation-play-state:running;
+}
+
+/* DARK MODE */
+
+@media (prefers-color-scheme:dark) { 
+	.jbl{
+		--jblbackground: rgb(0, 0, 0);
+		--jblcircle:  rgb(24, 39, 243);
+		--jblcircleshadow: rgba(255, 255, 255, 0.863);
+		--jbltext: #ffffff;
+	}
+	.tesla{
+		--black:#ffffff;
+	--white: #161616;
+	--shadow: rgba(236, 236, 236, 0.2);
+	--gradientwhite: radial-gradient(circle, rgb(18, 18, 19) 0%, rgb(51, 51, 51) 100%);
+	}
 }
