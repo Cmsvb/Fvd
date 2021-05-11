@@ -348,3 +348,9 @@ section{
 	--gradientwhite: radial-gradient(circle, rgb(18, 18, 19) 0%, rgb(51, 51, 51) 100%);
 	}
 }
+
+@media (max-width: 800px) {
+	body{
+		grid-template-columns: 1fr;
+	}
+}
