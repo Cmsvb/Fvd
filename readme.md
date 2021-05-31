@@ -47,3 +47,12 @@ Ik heb deze week veel aan de animaties gewerkt. Ik wilde graag de eerste animati
 # Week 5
 
 Deze week wilde ik de tweede animatie afmaken. Ik heb dan ook de letters helemaal geanimeerd en heb het vlak achter het woord tesla ook geanimeerd. Ik had wel moeite om de animatie te laten starten op het moment dat er over het vlak gehoverd werd. Dit heb ik uiteindelijk opgelost, ik had eerder .tesla:hover ::after terwijl het .tesla:hover::after moest zijn. 
+
+# Week 6
+
+Deze week heb heb ik mijn schetsen gemaakt voor week 7. Op mijn website kan de gebruiker een lijstje van muziek sorteren en de muziek liken. Ik heb mijn schetsen laten zien tijdens de les en sanne had mij toen feedback gegeven. De dag na de les heb ik een breakdown schets gemaakt en daar heb ik toen ook feedback op gekregen. Ik had een aantal elementen verkeerd aangegeven. Dat waren vooral elementen zoals ul, li, form, legend en nav. Ook gaf sanne aan dat ik beter de checkboxes bij naam kan veranderen naar een zoekbalk. Op het moment dat ik de breakdown schets maakte dacht ik dat zoeken moeilijker was dan dat het daadwerkelijk is.
+
+# Week 7
+
+Deze week heb ik de basis gelegt voor de website die ik ga maken. Ik ben begonnen met het maken van de layout (ul, li, button, inputs etc). Om alles goed uit elkaar te kunnen halen heb ik alles een felle kleur gegeven. Met het maken van de layout had ik niet zo veel moeite maar het maken van de filter en sorteer functie had ik wel een beetje moeite. Ik heb daarom bij sanne aangegeven dat ik het verschil tussen legend, form en fieldbox niet wist en of hij daar meer over wilde uitleggen. Dit heeft hij gedaan en hij heeft gelijk wat meer dingen uitgelegd over hoe je een checkbox op verschillende manieren kan gebruiken. Ook heeft hij uitgelegd dat je de after en before checkboxes kunt gebruiken om de checkboxes te stylen.
+Voor volgende week wil ik het formulier uitwerken en werkend krijgen.
