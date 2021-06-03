@@ -29,3 +29,10 @@ console.log("howdy");
 
 // --- EIND STUKJE API ---
 
+// --- ZOEKEN MET ZOEKBALK ---
+
+var options = {
+    valueNames: [ 'titel', 'muzikant' ]
+};
+
+var musicList = new List('muzieklijst', options);
