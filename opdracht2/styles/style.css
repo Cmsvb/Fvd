@@ -125,6 +125,13 @@ ul li ul li{
 	justify-content: left;
 	padding: 0.2em 0em;
 }
+ul li ul li:first-of-type{
+	padding-top: 0em;
+}
+
+ul li ul li:last-of-type{
+	padding-bottom: 0em;
+}
 
 main > ul > li{
 	padding: 0.7em;
@@ -216,6 +223,10 @@ fieldset{
     margin: 0.5em 0em;
 }
 
+fieldset:first-of-type{
+	margin-top: 1em;
+}
+
 form fieldset label{
 	font-weight: 300;
     background-color: white;
@@ -242,4 +253,9 @@ input[type=search]{
 
 input[type=range]{
 	width: 78%;
+}
+
+/* fieldset input:focus + label,  */
+fieldset label:hover {
+	box-shadow: 0 0 0 .25em blue;
 }
