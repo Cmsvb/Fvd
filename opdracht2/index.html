@@ -22,7 +22,6 @@
 	<main id="muzieklijst">
 		<header>
 			<h1>jouw playlist</h1>
-			<button></button>
 		</header>
 		<ul  class="list all">
 			<li class="pop">
@@ -183,19 +182,22 @@
 			</li>
 		</ul>
 		<form>
-			<button id="filteroptie">
+			<h1>Filteren en sorteren</h1>
+			<input type="button" value="filteren"  class="visually-hidden">
+			<label for="filteren" id="filteroptie">
 				<svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M11.1111 17H13.8889C14.6528 17 15.2778 16.3625 15.2778 15.5833C15.2778 14.8042 14.6528 14.1667 13.8889 14.1667H11.1111C10.3472 14.1667 9.72222 14.8042 9.72222 15.5833C9.72222 16.3625 10.3472 17 11.1111 17ZM0 1.41667C0 2.19583 0.625 2.83333 1.38889 2.83333H23.6111C24.375 2.83333 25 2.19583 25 1.41667C25 0.6375 24.375 0 23.6111 0H1.38889C0.625 0 0 0.6375 0 1.41667ZM5.55556 9.91667H19.4444C20.2083 9.91667 20.8333 9.27917 20.8333 8.5C20.8333 7.72083 20.2083 7.08333 19.4444 7.08333H5.55556C4.79167 7.08333 4.16667 7.72083 4.16667 8.5C4.16667 9.27917 4.79167 9.91667 5.55556 9.91667Z" fill="black"/>
-					</svg>
+				</svg>
 				Filteren
-			</button>
-			<button id="sorteeroptie">
+			</label>
+			<input type="button" value="sorteren"  class="visually-hidden">
+			<label for="sorteren" id="sorteeroptie">
 				<svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M1.38889 17H6.94444C7.70833 17 8.33333 16.3625 8.33333 15.5833C8.33333 14.8042 7.70833 14.1667 6.94444 14.1667H1.38889C0.625 14.1667 0 14.8042 0 15.5833C0 16.3625 0.625 17 1.38889 17ZM0 1.41667C0 2.19583 0.625 2.83333 1.38889 2.83333H23.6111C24.375 2.83333 25 2.19583 25 1.41667C25 0.6375 24.375 0 23.6111 0H1.38889C0.625 0 0 0.6375 0 1.41667ZM1.38889 9.91667H15.2778C16.0417 9.91667 16.6667 9.27917 16.6667 8.5C16.6667 7.72083 16.0417 7.08333 15.2778 7.08333H1.38889C0.625 7.08333 0 7.72083 0 8.5C0 9.27917 0.625 9.91667 1.38889 9.91667Z" fill="black"/>
 					</svg>
-					Sorteren
-			</button>
-			<Fieldset class="filteren onzichtbaar" >
+				Sorteren
+			</label>
+			<Fieldset class="filteren1 onzichtbaar" >
 				<legend>Genre</legend>
 				<div>
 				<input type="radio" name="filter" id="all" value="all" class="visually-hidden" checked>
@@ -210,29 +212,16 @@
 					<label for="edmMusic">EDM</label>
 				</div>
 			</Fieldset>
-			<Fieldset class="filteren" >
+			<Fieldset class="filteren2 onzichtbaar" >
 				<legend>Titel/Artiest</legend>
 				<input type="search" class="search" placeholder="Zoeken">
 			</Fieldset>
-			<!-- <fieldset class="filteren">
-				<legend>Lengte liedje</legend>
-				<aside>
-					mini <input aria-label="maat" type="range" id="maat" name="maat" min="1" max="5" value="3" step="1" list="tickmarks"> mega
-				</aside>
-				<datalist id="tickmarks">
-					<option value="1" label="mini"></option>
-					<option value="2" label="klein"></option>
-					<option value="3" label="basis"></option>
-					<option value="4" label="groot"></option>
-					<option value="5" label="mega"></option>
-				  </datalist>
-			</fieldset> -->
-			<fieldset id="sorteren" >
-				<legend>sorteer op: </legend>
-				<div>
-					<button class="sort" data-sort="titel">Titel</button>
-					<button class="sort" data-sort="artiest" data-default-order='asc'>Artiest</button>
-				</div>
+			<fieldset id="sorteren" class="onzichtbaar" >
+				<legend>Sorteer op: </legend>
+					<div>
+						<button class="sort" data-sort="titel">Titel</button>
+						<button class="sort" data-sort="artiest" data-default-order='asc'>Artiest</button>
+					</div>
 				</fieldset>
 		</form>
 	</main>

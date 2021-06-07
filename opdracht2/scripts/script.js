@@ -32,6 +32,39 @@ filterPop.addEventListener("change", filterMuziek);
 filterRb.addEventListener("change", filterMuziek);
 filterEdm.addEventListener("change", filterMuziek);
 
+// -- FILTER EN SORTEER ---
+var filterknop = document.querySelector("#filteroptie");
+var sorteerknop = document.querySelector("#sorteeroptie");
+
+function laatFilterZien(event){
+    let filteroptie1 = document.querySelector(".filteren1");
+    let filteroptie2 = document.querySelector(".filteren2");
+    filteroptie1.classList.toggle("onzichtbaar");
+    filteroptie2.classList.toggle("onzichtbaar");
+
+    console.log("filteren");
+};
+
+function laatSorterenZien(event){
+    let sorteeroptie1 = document.querySelector("#sorteren");
+    sorteeroptie1.classList.toggle("onzichtbaar");
+
+    console.log("sorteren");
+};
+
+filterknop.addEventListener("click", laatFilterZien);
+sorteerknop.addEventListener("click", laatSorterenZien);
+
+// --- SORTEREN ---
+
+var options = {
+    valueNames: [ 'titel', 'muzikant' ]
+};
+
+var musicList = new List('muzieklijst', options);
+
+musicList.sort('titel', { order: "asc" });
+
 // --- FAVORIETEN ---
 
 var favorietKnop = document.querySelectorAll('main > ul > li > button:first-of-type');
@@ -49,67 +82,15 @@ favorietKnop[0].addEventListener("click", favoToevoegen);
 favorietKnop[1].addEventListener("click", favoToevoegen);
 favorietKnop[2].addEventListener("click", favoToevoegen);
 favorietKnop[3].addEventListener("click", favoToevoegen);
-
-
-    // Nummer.classList.toggle("liked");
+favorietKnop[4].addEventListener("click", favoToevoegen);
+favorietKnop[5].addEventListener("click", favoToevoegen);
+favorietKnop[6].addEventListener("click", favoToevoegen);
+favorietKnop[7].addEventListener("click", favoToevoegen);
+favorietKnop[8].addEventListener("click", favoToevoegen);
+favorietKnop[9].addEventListener("click", favoToevoegen);
+favorietKnop[10].addEventListener("click", favoToevoegen);
+favorietKnop[11].addEventListener("click", favoToevoegen);
+favorietKnop[12].addEventListener("click", favoToevoegen);
   
-// -- FILTER EN SORTEER ---
-var filterknop = document.getElementById("filteroptie");
-var filteropties = document.querySelector(".filteren");
 
-// var sorteerknop = document.getElementById("sorteeroptie");
-// var sorteeropties = document.getElementById("sorteren");
-
-function laatFilterZien(){
-    console.log("filteren");
-    // filteropties.classList.toggle("onzichtbaar");
-    
-};
-// function laatSorterenZien(){
-//     console.log("sorteren");
-//     filteropties.classList.toggle("onzichtbaar");
-    
-// };
-
-filterknop.addEventListener("click", laatFilterZien);
-
-// sorteerknop.addEventListener("click", laatSorterenZien);
-
-
-// --- FAVORIETEN LIJST ---
-
-// var favorietenLijst = document.querySelectorAll('main > header > button');
-
-// function laatFavoZien(){
-//     let deLijst = document.querySelector("main > ul");
-//     if (condition) {
-        
-//     }
-// }
-
-// favorietenLijst.addEventListener('click', laatFavoZien)
-    
-// .forEach(element => {
-//     if (favorietKnop.classList.contains("like")) {
-//           console.log("i did it");
-//     }
-// });
-
-// console.log("i did it");
-// if (event.target.classList.contains("like")){
-//     parentElement.classList.add("liked");
-// } 
-// else {
-//     // var Nummer = document.querySelector('main > ul > li');
-//     parentElement.classList.remove("liked");
-// }
-
-// --- FAVORIETEN LIJST ---
-// var options = {
-//     valueNames: [ 'titel', 'artiest']
-// };
-
-// var musicList = new List('muzieklijst', options);
-
-// musicList.sort('titel', { order: "asc" });
 
