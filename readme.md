@@ -43,7 +43,7 @@ Ik heb deze week weinig tot geen tijd gehad voor schoolopdrachten door omstandig
 
 # Week 3
 
-Ik heb deze week gewerkt aan het begin van de eerste animatie en het uitzoeken van hoe ik github desktop moet gebruiken. Ik heb tot nu toe een after gemaakt in de vorm met een cirkel en daarbij een shadow. Deze cirkel kan groter worden op een soort beat. Dit heb ik gedaan door middel van scale te gebruiken. Het lastige van de animatie maken vond ik het goed timen van elke actie zodat de animatie er gelijdelijk uit ziet. Hier heb ik dan ook best wat tijd aan besteed. Voor de volgende week wil ik de eerste animatie afmaken, dat betekend dat de letters groter en kleiner kunnen worden en dat de letters kunnen trillen. Ik wil dit gaan doen door middel van een svg filter maar als ik hier te veel tijd aan kwijt ben wil ik de letters laten trillen door ze te roteren of door translate te gebruiken.
+Ik heb deze week gewerkt aan het begin van de eerste animatie en het uitzoeken van hoe ik github desktop moet gebruiken. Ik heb tot nu toe een after gemaakt in de vorm met een cirkel en daarbij een shadow. Deze cirkel kan groter worden op een soort beat. Dit heb ik gedaan door middel van scale te gebruiken. Het lastige van de animatie maken vond ik het goed timen van elke actie zodat de animatie er geleidelijk uit ziet. Hier heb ik dan ook best wat tijd aan besteed. Voor de volgende week wil ik de eerste animatie afmaken, dat betekend dat de letters groter en kleiner kunnen worden en dat de letters kunnen trillen. Ik wil dit gaan doen door middel van een svg filter maar als ik hier te veel tijd aan kwijt ben wil ik de letters laten trillen door ze te roteren of door translate te gebruiken.
 
 - [Vordering week 3](opdracht2/images/week3.png)
 
@@ -61,7 +61,7 @@ Deze week wilde ik de tweede animatie afmaken. Ik heb dan ook de letters helemaa
 
 # Week 6
 
-Deze week heb heb ik mijn schetsen gemaakt voor week 7. Op mijn website kan de gebruiker een lijstje van muziek sorteren en de muziek liken. Ik heb mijn schetsen laten zien tijdens de les en sanne had mij toen feedback gegeven. De dag na de les heb ik een breakdown schets gemaakt en daar heb ik toen ook feedback op gekregen. Ik had een aantal elementen verkeerd aangegeven. Dat waren vooral elementen zoals ul, li, form, legend en nav. Ook gaf sanne aan dat ik beter de checkboxes bij naam kan veranderen naar een zoekbalk. Op het moment dat ik de breakdown schets maakte dacht ik dat zoeken moeilijker was dan dat het daadwerkelijk is.
+Deze week heb heb ik mijn schetsen gemaakt voor week 7. Op mijn website kan de gebruiker een lijstje van muziek sorteren en de muziek liken. Ik heb mijn schetsen laten zien tijdens de les en Sanne had mij toen feedback gegeven. De dag na de les heb ik een breakdown schets gemaakt en daar heb ik toen ook feedback op gekregen. Ik had een aantal elementen verkeerd aangegeven. Dat waren vooral elementen zoals ul, li, form, legend en nav. Ook gaf Sanne aan dat ik beter de checkboxes bij naam kan veranderen naar een zoekbalk. Op het moment dat ik de breakdown schets maakte dacht ik dat zoeken moeilijker was dan dat het daadwerkelijk is.
 
 - [Schetsen week 6](opdracht2/images/week6.1.png)
 - [Schetsen met feedback week 6](opdracht2/images/week6.2.png)
@@ -70,7 +70,7 @@ Deze week heb heb ik mijn schetsen gemaakt voor week 7. Op mijn website kan de g
 
 # Week 7
 
-Deze week heb ik de basis gelegt voor de website die ik ga maken. Ik ben begonnen met het maken van de layout (ul, li, button, inputs etc). Om alles goed uit elkaar te kunnen halen heb ik alles een felle kleur gegeven. Met het maken van de layout had ik niet zo veel moeite maar het maken van de filter en sorteer functie had ik wel een beetje moeite. Ik heb daarom bij sanne aangegeven dat ik het verschil tussen legend, form en fieldbox niet wist en of hij daar meer over wilde uitleggen. Dit heeft hij gedaan en hij heeft gelijk wat meer dingen uitgelegd over hoe je een checkbox op verschillende manieren kan gebruiken. Ook heeft hij uitgelegd dat je de after en before checkboxes kunt gebruiken om de checkboxes te stylen.
+Deze week heb ik de basis gelegd voor de website die ik ga maken. Ik ben begonnen met het maken van de layout (ul, li, button, inputs etc). Om alles goed uit elkaar te kunnen halen heb ik alles een felle kleur gegeven. Met het maken van de layout had ik niet zo veel moeite maar het maken van de filter en sorteer functie had ik wel een beetje moeite. Ik heb daarom bij sanne aangegeven dat ik het verschil tussen legend, form en fieldbox niet wist en of hij daar meer over wilde uitleggen. Dit heeft hij gedaan en hij heeft gelijk wat meer dingen uitgelegd over hoe je een checkbox op verschillende manieren kan gebruiken. Ook heeft hij uitgelegd dat je de after en before checkboxes kunt gebruiken om de checkboxes te stylen.
 Voor volgende week wil ik het formulier uitwerken en werkend krijgen.
 
 - [Vordering week 7](opdracht2/images/week7.png)
