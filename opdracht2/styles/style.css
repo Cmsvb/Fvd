@@ -7,9 +7,7 @@
 			 url('../fonts/eenfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-
 }
-
 
 /* ALGEMENE STYLING */
 *, *::after, *::before {
@@ -19,16 +17,6 @@
 }
 
 body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
-}
-
-/* BRAND STYLING */
-
-
-
-header, main, form{
 	--color1: #181818;
 	--color2: #282828;
 	--color3: #535353;
@@ -36,24 +24,47 @@ header, main, form{
 	--color5: white;
 	--color6: tomato;
 	--text: white;
+
+	font-family:eenfont, sans-serif;
+	color:var(--color5);
+	background-color:var(--color2);
+}
+
+/* BRAND STYLING */
+
+
+
+header, main, form{
+	
 	
 	font-family: 'roboto', sans-serif;
 }
+
 header{
 	background-color: var(--color1);
 	padding: 1.3em
 }
 
-/* header button{
+header button{
 	height: 2.1em; width: 2.4em;
-	clip-path: path("M15.3899 27.7963C15.5645 27.9277 15.779 27.9993 16 28C16.221 27.9993 16.4355 27.9277 16.6101 27.7963C22.171 23.6055 26.0016 19.9968 28.682 16.4365C32.1026 11.8868 32.8827 7.68631 31.0024 3.95147C29.6622 1.28372 25.8016 -0.879583 21.3109 0.371834C19.165 0.973036 17.2927 2.26233 16 4.02907C14.7073 2.26233 12.835 0.973036 10.6891 0.371834C6.18842 -0.898984 2.3378 1.28372 0.997586 3.95147C-0.882716 7.68631 -0.102591 11.8868 3.31796 16.4365C5.99839 19.9968 9.82901 23.6055 15.3899 27.7963Z");
 	margin-left: 4em;
 	border:none;
-	
-} */
+	background-color: var(--color2);
+}
+
+header button svg, li button svg{
+	fill: var(--color5);
+}
+header button svg:hover svg, li button svg:hover svg{
+	fill: rgb(221, 221, 221) ;
+}
+
+header button.alleenhartjes svg{
+	fill: var(--color4);
+}
 
 li button, li input{
-	height: 2em; width: 2em;
+	height: 2em; width: 2.1em;
 	margin: auto;
     margin-right: 0;
 	font-size: 15.6px;
@@ -144,7 +155,15 @@ main > ul{
 	grid-gap: 1em;
 	padding: 1em;
 	padding-top: 0;
-	margin-bottom: 4.2em;
+	margin-bottom: 5.2em;
+}
+
+main > ul.alleenFavorieten > li{
+	display:none;
+}
+
+main > ul.alleenFavorieten > li.like{
+	display:flex;
 }
 
 li > div{
@@ -165,22 +184,30 @@ li > div{
 	width: 1px;
 }
 
-ul li button:first-of-type{
-	color: var(--color5);
-	background-color: var(--color5);
-	clip-path: path("M15.3899 27.7963C15.5645 27.9277 15.779 27.9993 16 28C16.221 27.9993 16.4355 27.9277 16.6101 27.7963C22.171 23.6055 26.0016 19.9968 28.682 16.4365C32.1026 11.8868 32.8827 7.68631 31.0024 3.95147C29.6622 1.28372 25.8016 -0.879583 21.3109 0.371834C19.165 0.973036 17.2927 2.26233 16 4.02907C14.7073 2.26233 12.835 0.973036 10.6891 0.371834C6.18842 -0.898984 2.3378 1.28372 0.997586 3.95147C-0.882716 7.68631 -0.102591 11.8868 3.31796 16.4365C5.99839 19.9968 9.82901 23.6055 15.3899 27.7963Z");
+ul li button{
+	background-color: var(--color3);
 	border:none;
 }
 
-.like {
-	color: var(--color4)!important;
-	background-color: var(--color4)!important;
+header button.alleenhartjes svg{
+	fill: var(--color4);
+}
+
+li.like button:first-of-type svg {
+	fill: var(--color4);
 	transition: .25s ease-out;
 } 
 
-ul li button.play{
-	border: 0;
-	clip-path: path("M1.81636 29C1.33463 29 0.872635 28.7688 0.532001 28.3571C0.191366 27.9455 9.6839e-08 27.3873 9.6839e-08 26.8052V2.19554C-0.000101123 1.82093 0.0791491 1.45252 0.230206 1.12539C0.381263 0.798255 0.599098 0.523284 0.862975 0.326654C1.12685 0.130025 1.42799 0.0182802 1.73771 0.00205895C2.04744 -0.0141623 2.35545 0.0656794 2.63241 0.233983L22.9985 12.5441C23.2995 12.7267 23.5526 13.0068 23.7295 13.3532C23.9063 13.6996 24 14.0986 24 14.5057C24 14.9127 23.9063 15.3117 23.7295 15.6581C23.5526 16.0045 23.2995 16.2846 22.9985 16.4672L2.63241 28.7667C2.37929 28.9207 2.09975 29.0006 1.81636 29Z");
+ul li button.stop{
+	display:none;
+}
+
+ul li.playing button.stop{
+	display:inline-block;
+}
+
+ul li.playing button.play{
+	display:none;
 }
 
 /* --- FORM --- */
@@ -216,6 +243,10 @@ form > label, form button{
     align-items: center;
 	background-color: var(--color5);
 	margin-bottom:.7em;
+}
+
+form button.actief{
+	box-shadow: inset 0 0 0px 3px var(--color6);
 }
 
 form > label:first-of-type{
@@ -261,6 +292,7 @@ form fieldset label{
 	flex: 0 0 auto;
 	margin-right: 0.7em;
 	border-radius: 2em;
+	color: black;
 }
 
 legend{

@@ -16,6 +16,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 5. https://codepen.io/cmsvb/pen/zYZoRoE
 6. https://codepen.io/shooft/pen/eYZVNyj
 
+## Bronnen muziek
+1. https://www.youtube.com/watch?v=3qRAdBPqQu4&ab_channel=YadeLauren-Topic
+2. https://www.youtube.com/watch?v=gNi_6U5Pm_o&ab_channel=OliviaRodrigoVEVO
+3. https://www.youtube.com/watch?v=qk0r28YiIyk
+4. https://www.youtube.com/watch?v=bpOSxM0rNPM
+5. https://www.youtube.com/watch?v=cZwYpAh3bXQ
+6. https://www.youtube.com/watch?v=k48LFjD26JU
+7. https://www.youtube.com/watch?v=w_dsgi8EUDg
+8. https://www.youtube.com/watch?v=nsXwi67WgOo
+9. https://www.youtube.com/watch?v=SYIddU2IdTw
+10. https://www.youtube.com/watch?v=dly6p4Fu5TE
+11. https://www.youtube.com/watch?v=q-9kPks0IfE
+12. https://www.youtube.com/watch?v=e7HBypw4lhY
+13. https://www.youtube.com/watch?v=ycJeCUfns3g
+
+
 
 
 ## Je 'posts' (je code-dagboek)
@@ -96,3 +112,13 @@ Wat deze week niet zo goed ging is het werkend krijgen van het sorteren. Ik heb 
 - [Uitwerking - tablet dark mode](opdracht2/images/week9-dark-tablet.png)
 - [Uitwerking - mobiel light mode](opdracht2/images/week9-light-mobile.png)
 - [Uitwerking - tablet light mode](opdracht2/images/week9-light-tablet.png)
+
+# Week 10
+
+In deze week heb ik mijn site aangevuld met de code die ik in de vorige week niet kon realiseren. Ik ben tot de conclusie gekomen dat ik het schrijven van javascript een beetje heb onderschat. Ik vind het heel leuk om meer over te leren maar ben nog niet op het niveau wat ik hoopte te zijn. Sanne heeft me daarom ook geholpen met het werkend krijgen van de sorteer functie en hij heeft me geholpen met de functie om muziek af te spelen en stop te zetten. 
+Het probleem waar ik mee de mist in ging was dat ik te vaak dacht aan het gebruiken van een if statement die helemaal niet nodig was. In plaats daarvan heeft Sanne me geleerd dat ik door een class te geven aan een parent element ook verschillende functies werkend kan krijgen zoals de filter voor gelikete muziek. 
+Ik heb ook de like buttons verandert. Ik had een clip-path gebruikt waardoor ik geen indicatie kreeg als ik via het toetsenbord navigeerde door de site. Ik heb nu in de buttons een svg gezet en aan alle buttons een title gegeven zodat screenreaders alsnog de buttons kunnen lezen.
+
+- [Actieve filter en sorteer button](opdracht2/images/actieve_filter_button.png)
+- [Like button bestuurd met toetsenbord](opdracht2/images/like_met_outline.png)
+- [Afspelen van muziek](opdracht2/images/afspelen_muziek.png)
